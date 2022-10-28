@@ -1,0 +1,3 @@
+[submodule "themes/mocha-theme"]
+	path = themes/mocha-theme
+	url = https://github.com/crispybaccoon/mocha-theme
