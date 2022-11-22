@@ -36,6 +36,10 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install dart-sass-embedded
+        run: |
+          wget -O ${{ runner.temp }}/dart-sass.tar.gz https://github.com/sass/dart-sass-embedded/releases/download/1.56.1/sass_embedded-1.56.1-linux-x64.tar.gz \
+          && sudo tar –xvzf ${{ runner.temp }}/dart-sass.tar.gz -C /usr/local/dart-sass/
       - name: Checkout
         uses: actions/checkout@v3
         with:
