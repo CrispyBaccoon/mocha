@@ -1,7 +1,10 @@
 baseURL = 'https://crispybaccoon.github.io/mocha'
+Author = 'crispybaccoon'
 languageCode = 'en-us'
 title = 'mocha'
 theme = 'mocha-theme'
+
+enableEmoji = true
 
 [menu]
   [[menu.main]]
